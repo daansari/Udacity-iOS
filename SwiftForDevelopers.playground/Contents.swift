@@ -25,8 +25,7 @@ func lyricsForName(lyricsTemplate: String, fullName: String) -> String {
     let shortName = shortNameFromName(name: fullName)
     
     lyricsTemplate = lyricsTemplate.replacingOccurrences(of: "<FULL_NAME>", with: fullName).replacingOccurrences(of: "<SHORT_NAME>", with: shortName)
-    print(lyricsTemplate)
-    return ""
+    return lyricsTemplate
 }
 
 let bananaFanaTemplate = [
